@@ -1,11 +1,19 @@
 body{
     font-family: sans-serif;
     font-size: 20px;
+    margin: 0px;
     background-color: rgb(212, 212, 212);
+}
+
+.hero{
     background-image: url(/INTRODUCAO/tags-semanticas/ProjetoCSS-inicio/imagens/bg-3.jpg);
-    background-size: 100% 35%;
-    background-repeat: no-repeat;
-    background-position: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+}
+
+.hero-content{
+
 }
 
 ul{
