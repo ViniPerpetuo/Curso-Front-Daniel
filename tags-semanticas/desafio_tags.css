@@ -5,7 +5,7 @@ body{
 }
 
 .hero{
-    background-image: url(/INTRODUCAO/tags-semanticas/ProjetoCSS-inicio/imagens/bg-3.jpg);
+    background-image: url(ProjetoCSS-inicio/imagens/bg-3.jpg);
     height: 500px;
     background-size: cover;
     background-position: right center;
