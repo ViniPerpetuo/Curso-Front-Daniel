@@ -1,0 +1,26 @@
+body{
+    background-color:aqua;
+    font-family: sans-serif;
+}
+
+.hero{
+    display: flex;
+    padding: 20px;
+    margin-top: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    background-color: white;
+    height: 500px;
+    width: 45%;
+    list-style: none;
+}
+
+li{
+    background-color: cadetblue;
+    
+    width: 500px;
+}
