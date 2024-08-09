@@ -5,20 +5,17 @@ body{
 
 .hero{
     display: flex;
-    padding: 20px;
     margin-top: 120px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-ul{
+.list{
     background-color: white;
     height: 500px;
     width: 45%;
     list-style: none;
-    padding: 0;
     overflow: auto;
 }
 
@@ -28,12 +25,6 @@ li{
 
 li:hover {
     background-color: rgb(245, 243, 243);
-}
-
-
-div{
-    padding: 10px;
-    height: 145px;
 }
 
 img{
