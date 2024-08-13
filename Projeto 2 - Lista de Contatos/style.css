@@ -7,24 +7,43 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.list{
-    background-color: white;
-    width: 90%;
-    /* max-width: 500px;
-    max-height: 500px; */
-    list-style: none;
+.list__hero{
+    background-color: white; 
+    width: 90%; 
+    max-width: 500px;
+    max-height: 400px;
     overflow-y: auto;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0,0,0,.2);
+} 
+
+.list{
+    list-style-type: none;
+}
+ 
+li:hover{
+    background-color: rgb(245, 243, 243);
+} 
+
+.list__item{
+    display: flex;
 }
 
-li:hover {
-    background-color: rgb(245, 243, 243);
+.list__item__image{
+    padding: 0px 20px 20px 0px;
 }
+
+.list__item__image img{
+    border-radius: 50%;
+}
+
+
+
 
