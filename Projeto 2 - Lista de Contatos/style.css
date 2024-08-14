@@ -67,6 +67,10 @@ body{
     display: flex;
     gap: 16px;
     align-items: center;
+    opacity: 0.0;
+}
+
+.list__item:hover .list__item__crud{
     opacity: 0.3;
 }
 
