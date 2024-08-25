@@ -1,99 +1,119 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: rgb(15, 15, 15);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(15, 15, 15);
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
 }
 
-header{
-    background-color: black;
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
-    align-items: center;
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
 }
 
-.cabecalho__logo{
-    text-transform: uppercase;
-    font-size: 35px;
-    color: white;
+.header__logo {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-left: 16px;
+  letter-spacing: 2px;
 }
 
-.lista__navegacao{
-    display: flex;
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+  gap: 16px;
 }
 
-.lista__navegacao li{
-    list-style-type: none;
-    margin-right: 20px;
-    padding: 15px;
+.nav__list a {
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+  border-radius: 6px;
 }
 
-.lista__navegacao a{
-    color: white;
-    text-decoration: none;
+.nav__list a:hover {
+  text-decoration: underline;
 }
 
-/* MAIN */
-
-main{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+a.nav__list--active {
+  background-color: greenyellow;
+  color: black;
+  pointer-events: none;
 }
 
-.main__titulo{
-    font-size: 80px;
-    color: white;
+/* TITULO */
+
+.tittle {
+  font-size: 75px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.lista__planos{
-    display: flex;
-    margin: 0;
-    padding: 0;
+/* SECTION MAIN */
+
+.plan {
+  display: flex;
+  gap: 16px;
 }
 
-.lista__item{
-    list-style-type: none;
-    background-color: rgb(66, 66, 66);
-    position: relative;
-    width: 330px;
-    height: 400px;
-    padding: 20px;
-    margin: 10px;
+.plan__cards {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: rgb(37, 37, 43);
+  border-radius: 8px;
+  box-shadow: 0 5px 12px black;
+  display: flex;
+  flex-direction: column;
 }
 
-.lista__item h3{
-    color: white;
-    font-size: 30px;
+.plan__cards__tittle {
+  text-transform: uppercase;
+  border-bottom: 2px solid greenyellow;
+  margin-top: 0;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
-.item__content__titulo{
-    padding-bottom: 10px;
-    border-bottom: 2px solid yellowgreen;
-    margin: 0;
+.plan__cards__price {
+  margin-top: 0px;
+  font-size: 34px;
 }
 
-.item__content__price{
-    margin-top: 20px;
+span {
+  font-size: 15px;
 }
 
-span{
-    font-size: 15px;
+.plan__cards__features{
+  margin: 0 0 35px;
+  color: #b5b5b5;
+  padding-left: 16px;
+  line-height: 1.8;
+  flex-grow: 1;
 }
 
-.lista__item li{
-    font-size: 20px;
-    color: white;
-    list-style-type:disc;
-    line-height: 30px;
+.plan__cards__features li::marker{
+  color: greenyellow;
 }
 
+.btn__plan {
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 16px 10px;
+  text-align: center;
+}
 
+.btn__plan:hover{
+  outline: 2px solid;
+  color: white;
+  background-color: transparent;
+}
