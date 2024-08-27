@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>MyCrds</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="cabecalho__logo">
-            <p>MyCrds</p>
-        </div>
-        <div class="cabecalho__navegacao">
-            <ul class="lista__navegacao">
-                <li class="lista__navegacao__item"><a href="#">Home</a></li>
-                <li class="lista__navegacao__item"><a href="#">Planos</a></li>
-                <li class="lista__navegacao__item"><a href="#">Suporte</a></li>
-                <li class="lista__navegacao__item"><a href="#">Contatos</a></li>
-            </ul>
-        </div>
+      <div class="header__logo">MyCrds</div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="nav__list--active">Planos</a></li>
+          <li><a href="#">Suporte</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        <h1 class="main__titulo">Escoha seu Plano</h1>
-        <ul class="lista__planos">
-            <li class="lista__item">
-                <div class="lista__item__content">
-                    <h3>Essencial</h3>
-                    <h3>R$ 3.95 <span>/ mês</span></h3>
-                    <ul>
-                        <li>1 Website</li>
-                        <li>1GB de Armazenamento</li>
-                        <li>10GB de transferência</li>
-                    </ul>
-                    <button>Assine já</button>
-                </div>
-            </li>
-            <li class="lista__item">
-                <div>
-                    <h3>Premium</h3>
-                    <h3>R$ 7.95 <span>/ mês</span></h3>
-                    <ul>
-                        <li>5 Websites</li>
-                        <li>3GB de Armazenamento</li>
-                        <li>Transferência Ilimitada</li>
-                        <li>10 horas de suporte mensais</li>
-                    </ul>
-                    <button>Assine já</button>
-                </div>
-            </li>
-            <li class="lista__item">
-                <div>
-                    <h3>Gold</h3>
-                    <h3>R$ 13.95 <span>/ mês</span></h3>
-                    <ul>
-                        <li>10 Websites</li>
-                        <li>30GB de Armazenamento</li>
-                        <li> Transferência Ilimitada</li>
-                        <li>30 horas de suporte mensais</li>
-                        <li>E-mail personalizado</li>
-                    </ul>
-                    <button>Assine já</button>
-                </div>
-            </li>
+    <h1 class="tittle">Escoha seu Plano</h1>
+
+    <section class="plan">
+      <div class="plan__cards">
+        <h3 class="plan__cards__tittle">Essencial</h3>
+        <h3 class="plan__cards__price">R$ 3.95 <span>/ mês</span></h3>
+        <ul class="plan__cards__features">
+          <li>1 Website</li>
+          <li>1GB de Armazenamento</li>
+          <li>10GB de transferência</li>
         </ul>
-    </main>
-    
-</body>
+        <a href="#" class="btn__plan">Assine já</a>
+      </div>
+
+      <div class="plan__cards">
+        <h3 class="plan__cards__tittle">Premium</h3>
+        <h3 class="plan__cards__price">R$ 7.95 <span>/ mês</span></h3>
+        <ul class="plan__cards__features">
+          <li>5 Websites</li>
+          <li>3GB de Armazenamento</li>
+          <li>Transferência Ilimitada</li>
+          <li>10 horas de suporte mensais</li>
+        </ul>
+        <a href="#" class="btn__plan">Assine já</a>
+      </div>
+
+      <div class="plan__cards">
+        <h3 class="plan__cards__tittle">Gold</h3>
+        <h3 class="plan__cards__price">R$ 13.95 <span>/ mês</span></h3>
+        <ul class="plan__cards__features">
+          <li>10 Websites</li>
+          <li>30GB de Armazenamento</li>
+          <li>Transferência Ilimitada</li>
+          <li>30 horas de suporte mensais</li>
+          <li>E-mail personalizado</li>
+        </ul>
+        <a href="#" class="btn__plan">Assine já</a>
+      </div>
+    </section>
+  </body>
 </html>

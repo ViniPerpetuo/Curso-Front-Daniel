@@ -1,58 +1,119 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: rgb(15, 15, 15);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(15, 15, 15);
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: white;
 }
 
-header{
-    background-color: black;
-    display: flex;
-    width: 60%;
-    justify-content: space-around;
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
 }
 
-.cabecalho__logo{
-    background-color: antiquewhite;
+.header__logo {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-left: 16px;
+  letter-spacing: 2px;
 }
 
-.cabecalho__navegacao{
-    background-color:antiquewhite;
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  font-size: 18px;
+  gap: 16px;
 }
 
-.lista__navegacao{
-    display: flex;
+.nav__list a {
+  text-decoration: none;
+  color: white;
+  padding: 14px;
+  border-radius: 6px;
 }
 
-.lista__navegacao__item{
-    list-style-type: none;
-    margin-right: 20px;
-    padding: 15px;
+.nav__list a:hover {
+  text-decoration: underline;
 }
 
-main{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+a.nav__list--active {
+  background-color: greenyellow;
+  color: black;
+  pointer-events: none;
 }
 
-.lista__planos{
-    display: flex;
+/* TITULO */
+
+.tittle {
+  font-size: 75px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.lista__item{
-    list-style-type: none;
-    background-color: rgb(66, 66, 66);
-    position: relative;
-    margin-right: 15px;
-    width: 230px;
-    height: 300px;
-    padding: 20px;
+/* SECTION MAIN */
+
+.plan {
+  display: flex;
+  gap: 16px;
+}
+
+.plan__cards {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: rgb(37, 37, 43);
+  border-radius: 8px;
+  box-shadow: 0 5px 12px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan__cards__tittle {
+  text-transform: uppercase;
+  border-bottom: 2px solid greenyellow;
+  margin-top: 0;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.plan__cards__price {
+  margin-top: 0px;
+  font-size: 34px;
+}
+
+span {
+  font-size: 15px;
+}
+
+.plan__cards__features{
+  margin: 0 0 35px;
+  color: #b5b5b5;
+  padding-left: 16px;
+  line-height: 1.8;
+  flex-grow: 1;
+}
+
+.plan__cards__features li::marker{
+  color: greenyellow;
+}
+
+.btn__plan {
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 16px 10px;
+  text-align: center;
+}
+
+.btn__plan:hover{
+  outline: 2px solid;
+  color: white;
+  background-color: transparent;
 }
