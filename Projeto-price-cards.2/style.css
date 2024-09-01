@@ -1,57 +1,63 @@
-html, body{
-    min-height: 100%;
+html,
+body {
+  min-height: 100%;
 }
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(/imagens/bg-2.jpg);
-  background-size: cover;
+  background-image: url(/Projeto-price-cards.2/imagens/bg-2.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
-  color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(199, 199, 199);
 }
-/* 
-.hero{
-   
-} */
 
-.hero__content{
-    text-align: center;
+.hero__content {
+  margin: 100px auto 0;
+  width: 80%;
+  color: white;
+  text-align: center;
 }
 
 .tittle {
-  font-size: 80px;
+  font-size: 56px;
   text-shadow: 2px 2px 4px black;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .subtittle {
-  background-color: black;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid white;
-  opacity: 0.7;
-  margin-bottom: 50px;
+  padding: 20px;
+  display: inline-block;
 }
 
 .content__section {
   background-color: white;
-  width: 76%;
   display: flex;
   flex-wrap: wrap;
+  width: 860px;
+  margin: auto;
+  gap: 16px;
+  padding: 16px;
 }
 
 .cards {
-  padding: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
 }
 
-.cards__img {
-  padding: 0;
-  margin: 0;
+.cards img {
+  width: 100%;
+  display: block;
 }
 
 .cards__text {
-  background-color: black;
+  background-color: rgb(49, 49, 49);
   padding: 15px;
   margin: 0;
 }
