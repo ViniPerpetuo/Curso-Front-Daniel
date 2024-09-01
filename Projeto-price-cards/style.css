@@ -93,7 +93,7 @@ span {
   color: #b5b5b5;
   padding-left: 16px;
   line-height: 1.8;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .plan__cards__features li::marker{
@@ -110,6 +110,7 @@ span {
   color: black;
   padding: 16px 10px;
   text-align: center;
+  margin-block-start: auto;
 }
 
 .btn__plan:hover{
