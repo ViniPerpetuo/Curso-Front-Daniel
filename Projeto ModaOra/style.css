@@ -13,31 +13,37 @@ body {
 }
 
 .header {
-  background-color: #162028;
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  color: white;
+  color: black;
+  height: 250px;
+  flex-direction: column;
 }
 
 .header__logo {
-  font-size: 3.5em;
+  font-size: 6em;
+  margin: 20px;
 }
 
 .header__nav {
   display: flex;
   font-size: 2em;
+  margin: 10px;
+  padding: 0;
 }
 
 .header__nav li {
-  margin: 0px 30px;
+  margin: 0px 20px;
   list-style-type: none;
 }
 
 .header__nav a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
+
+/* HERO */
 
 .hero {
   display: flex;
@@ -49,31 +55,15 @@ body {
   width: 100%;
 }
 
-.hero__escolha {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 60%;
-  height: 600px;
-}
-
 .hero__escolha h1 {
   font-size: 3em;
 }
 
-.hero__escolha p {
-  font-size: 1.4em;
-  line-height: 1.5;
-}
-
-.hero__models {
+.hero__models{
   display: flex;
-  gap: 3em;
-  margin-bottom: 7em;
 }
 
-.hero__models__details {
+.hero__models__details1 {
   text-align: center;
 }
 
